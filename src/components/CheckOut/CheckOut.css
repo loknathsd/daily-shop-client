@@ -1,0 +1,20 @@
+.checkOut-area{
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+}
+.table-area{
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+   
+
+}
+.checkOut-area button{
+    float: right;
+}
+ 
+  
+

@@ -1,0 +1,8 @@
+.product-detail form{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 25px;
+    border: 1px solid pink;
+    justify-content: center;
+}
