@@ -9,7 +9,7 @@ const ManageProduct = () => {
         })
         .then(res=>res.json())
         .then(result =>{
-            console.log('data is deleted successfully')
+            alert('data is deleted successfully')
         })
 
     }
@@ -21,8 +21,8 @@ const ManageProduct = () => {
             .catch(error => console.log(error))
     }, [])
     return (
-        <div>
-            <h4 style={{marginLeft:'20px'}}>Manage Products</h4>
+        <div className='mt-4'>
+            <h4 style={{textAlign:'center',marginBottom:'20px'}}>Manage Products</h4>
             <table style={{width:'85%',margin:'auto',marginTop:'10px'}} className="table ">
                 <thead>
                     <tr>

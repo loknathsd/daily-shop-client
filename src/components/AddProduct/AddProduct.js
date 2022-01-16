@@ -18,9 +18,8 @@ const AddProduct = () => {
             headers : {'Content-Type' : 'application/json'},
             body:JSON.stringify(productData)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data)
+        .then(result=>{
+            alert('Your product is added successfully')
         })
     }
 
@@ -39,14 +38,14 @@ const AddProduct = () => {
           });
     }
     return (
-        <div className="">
+        <div className="mt-5">
             <h2 style={{marginLeft:'150px'}}>Add product</h2>
             <div className="container">
                 <div className="row product-detail">
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <p><span>Product Name</span> <br /> <input defaultValue="Name" {...register("name")} /></p>
-                        <p><span>Weight</span><br /><input defaultValue="weight" {...register("weight")} /></p>
-                        <p><span>Add Price</span><br /> <input defaultValue="price" {...register("price")} /></p>
+                        <p><span>Product Name</span> <br /> <input placeholder="Name" {...register("name")} /></p>
+                        <p><span>Weight</span><br /><input placeholder="weight" {...register("weight")} /></p>
+                        <p><span>Add Price</span><br /> <input placeholder="price" {...register("price")} /></p>
                         <p><span>Add photo</span><br /><input onChange={handleImageUpload} type="file" /></p>
                         <input style={{color:'white'}}  value="Save" className="btn btn-primary" type="submit" />
                     </form>
